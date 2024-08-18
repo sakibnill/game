@@ -1,0 +1,22 @@
+
+.cell{
+    width: 80px;
+    height: 80px;
+    border: 2px solid;
+    cursor: pointer;
+    box-shadow: 0 0 0 3px;
+    font-size: 50px;
+}
+
+#cellContainer{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 240px;
+    margin: auto;
+}
+#resetBtn{
+    cursor: pointer;
+}
+#gameContainer{
+    text-align: center;
+}
