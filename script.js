@@ -72,5 +72,5 @@ function resetGame(){
     options = ["", "", "", "", "", "", "", "", ""];
     playerTrun.textContent = `${currentPlayer}'s turn`;
     cells.forEach(cell => cell.textContent = "");
-    running = false;
+    running = true;
 };
