@@ -1,31 +1,132 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title></title>
-	<link rel="stylesheet" href="style.css" />
-	<link rel="stylesheet" href="snake.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poultry & Fish Mart</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-	   <nav>
-        <div>
-            <h2>SAKIB NILL</h2>
-        </div>
-        <div>
-            <div class="main"> 
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="allgames.html">GAMES</a></li>
-                    <li><a href="#">ABOUT US</a></li>
-                    <li><a href="#">CONTACT US</a></li>
-                </ul>
-            </div>
-        </div>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">Poultry & Fish Mart</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+		<li><a href="allgames.html">GAMES</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#cart">Cart (0)</a></li>
+        </ul>
     </nav>
 
-	
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="home-content">
+            <h1>Welcome to Poultry & Fish Mart</h1>
+            <p>Your one-stop shop for fresh poultry, eggs, and fish.</p>
+            <a href="#products" class="btn">Explore Products</a>
+        </div>
+    </section>
 
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+        <h2>Our Products</h2>
+        <div class="product-categories">
+            <div class="category-card" onclick="location.href='#chicken'">
+                <img src="chicken.jpg" alt="Chicken">
+                <h3>Chicken</h3>
+            </div>
+            <div class="category-card" onclick="location.href='#eggs'">
+                <img src="eggs.jpg" alt="Eggs">
+                <h3>Eggs</h3>
+            </div>
+            <div class="category-card" onclick="location.href='#fish'">
+                <img src="fish.jpg" alt="Fish">
+                <h3>Fish</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details Section -->
+    <section id="chicken" class="product-details-section">
+        <h2>Chicken Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="chicken1.jpg" alt="Chicken 1">
+                <h3>Broiler Chicken</h3>
+                <p>৳ 200/kg</p>
+                <button class="btn">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="chicken2.jpg" alt="Chicken 2">
+                <h3>Deshi Chicken</h3>
+                <p>৳ 300/kg</p>
+                <button class="btn">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="eggs" class="product-details-section">
+        <h2>Egg Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="egg1.jpg" alt="Egg 1">
+                <h3>Farm Eggs</h3>
+                <p>৳ 120/dozen</p>
+                <button class="btn">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="egg2.jpg" alt="Egg 2">
+                <h3>Organic Eggs</h3>
+                <p>৳ 150/dozen</p>
+                <button class="btn">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="fish" class="product-details-section">
+        <h2>Fish Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="fish1.jpg" alt="Fish 1">
+                <h3>Rui Fish</h3>
+                <p>৳ 250/kg</p>
+                <button class="btn">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="fish2.jpg" alt="Fish 2">
+                <h3>Pangas Fish</h3>
+                <p>৳ 180/kg</p>
+                <button class="btn">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>We are a trusted supplier of fresh poultry, eggs, and fish. Our mission is to provide high-quality products at affordable prices.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Poultry & Fish Mart. All rights reserved.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+    
 </body>
 </html>
-
